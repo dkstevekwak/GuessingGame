@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing Game by SK</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="name">
+        <h1>Guess the Number</h1>
+        <h2>Let's see if you can read my mind</h2>
+      </a>
+    </header>
+    <div id="wrapper">
+      <section id="mainbox">
+        <input type="text" placeholder="Input Number 1-100" class="input" onkeydown="if (event.keyCode ===13) doesNumberToGuessExist()">
+        <button type="button" onclick="doesNumberToGuessExist()" class="submit">Submit Your Guess</button>
+        <button type="button" onclick="playAgain()" class="playagain">Play Again</button>
+        <button type="button" onclick="hint()" class="hint">Give me a Hint</button>
+        <h3 id="status" style="display: block;">Status displays here</h3>
+      </section>
+      <footer>
+        <a href="mailto:steveguac@gmail.com"><img src="Img/mail.png" alt="send email" class="email-icon"></a>
+        <a href="http://www.facebook.com/dkstevekwak"><img src="Img/facebook-wrap.png" alt="connect with Facebook" class="facebook-icon"></a>
+        <p>Please contact me for erros</p>
+        <p>&copy; 2014 Steve Kwak.</p>
+      </footer>
+    </div>
+  </body>
+</html>
