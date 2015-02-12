@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <script src="jquery.js"></script>
+    <script type='text/javascript' src='javascript.js'></script>
     <header>
       <a href="index.html" id="name">
         <h1>Guess the Number</h1>
@@ -16,17 +18,26 @@
       </a>
     </header>
     <div id="wrapper">
+      <h3 id="status" style="display: block;">Let's Play!</h3>
+      <section id="snow">
+        <img src="Img/snow.png" class="snow">
+        <img src="Img/fireworks.png" class="fireworks">
+      </section>
       <section id="mainbox">
-        <input type="text" placeholder="Input Number 1-100" class="input" onkeydown="if (event.keyCode ===13) doesNumberToGuessExist()">
-        <button type="button" onclick="doesNumberToGuessExist()" class="submit">Submit Your Guess</button>
-        <button type="button" onclick="playAgain()" class="playagain">Play Again</button>
-        <button type="button" onclick="hint()" class="hint">Give me a Hint</button>
-        <h3 id="status" style="display: block;">Status displays here</h3>
+        <input type="number" placeholder="Guess Number 1-100" id="input1" name="userinput" min='0' max='100'> </input>
+        <button type="button" class="submit">Submit Your Guess</button>
+        <button type="button" class="playagain">Play Again</button>
+        <button type="button" class="hint">Give me a Hint</button>
+        <h4 id="attempts" style="display: block;">Bring it on</h3>
+      </section>
+      <section id="fire">
+        <img src="Img/fire.png" class="fire">
+        <img src="Img/iceage.png" class="iceage">
       </section>
       <footer>
         <a href="mailto:steveguac@gmail.com"><img src="Img/mail.png" alt="send email" class="email-icon"></a>
         <a href="http://www.facebook.com/dkstevekwak"><img src="Img/facebook-wrap.png" alt="connect with Facebook" class="facebook-icon"></a>
-        <p>Please contact me for erros</p>
+        <p>Please report bugs to</p>
         <p>&copy; 2014 Steve Kwak.</p>
       </footer>
     </div>
